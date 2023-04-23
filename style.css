@@ -206,6 +206,8 @@ a {
   background-size: 10px;
   background-position: center right 15px;
   cursor: pointer;
+  appearance: none;
+  -moz-appearance: none;
 }
 
 .select:focus {
@@ -289,6 +291,10 @@ a {
   overflow-y: auto;
   background-color: #f4f7f6;
   padding: 20px;
+  appearance: none;
+  -moz-appearance: none;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
 }
 
 .pop-up-textarea:focus {
@@ -309,6 +315,8 @@ a {
   color: #fff;
   padding: 15px 30px;
   text-transform: uppercase;
+  appearance: none;
+  -moz-appearance: none;
 }
 
 .pop-up-button:hover {
@@ -377,7 +385,7 @@ a {
 .trends {
   box-sizing: border-box;
   display: flex;
-  
+  justify-content: space-between;
 }
 
 .trends-post {
@@ -659,6 +667,7 @@ a {
 
 .search-label {
   box-sizing: border-box;
+  appearance: none;
 }
 
 .search-hidden {
@@ -680,6 +689,8 @@ a {
   padding-left: 20px;
   border: none;
   vertical-align: middle;
+  appearance: none;
+  -moz-appearance: none;
 }
 
 .search-input:focus {
@@ -698,6 +709,8 @@ a {
   background-size: 16px;
   background-position: center;
   cursor: pointer;
+  appearance: none;
+  -moz-appearance: none;
 }
 
 .search-button:hover {
@@ -723,6 +736,8 @@ a {
   padding-left: 20px;
   padding-right: 20px;
   margin-bottom: 16px;
+  appearance: none;
+  -moz-appearance: none;
 }
 
 .send-input:focus {
@@ -741,6 +756,8 @@ a {
   font-weight: 700;
   color:#ffffff;
   margin-bottom: 57px;
+  appearance: none;
+  -moz-appearance: none;
 }
 
 .send-button:hover {
@@ -933,6 +950,8 @@ a {
   color: #fff;
   padding: 16px 30px;
   text-transform: uppercase;
+  appearance: none;
+  -moz-appearance: none;
 }
 
 .product-button:hover {
@@ -1120,7 +1139,6 @@ a {
   }
   .trends {
       width: 100%;
-      max-width: 1199px;
       min-width: 641px;
       flex-wrap: wrap;
   }
@@ -1276,8 +1294,11 @@ a {
   }
 }
 
-
-
+  /* @media(orientation: landscape){
+    .trends-post {
+      width: calc((100%/4) - 6px);
+  }
+  } */
 
 /***mobile***/
 
@@ -1569,5 +1590,11 @@ a {
   .footer-copyright {
       margin-top: 46px;
   }
+
+  /* @media(orientation: landscape){
+    .trends-post {
+      width: calc((100%/2) - 6px);
+  }
+  } */
 
 }  
