@@ -46,7 +46,7 @@ a {
   background-color: #000000;
   background-size: cover;
   width: 100%;
-  margin-bottom: 63px;
+  margin-bottom: 60px;
   position: relative;
 }
 
@@ -367,7 +367,7 @@ a {
   font-weight: bold;
   font-size: 20px;
   text-align: center;
-  margin-bottom: 45px;  
+  margin-bottom: 18px;  
 }
 
 .trends-title::after {
@@ -390,7 +390,7 @@ a {
 
 .trends-post {
   box-sizing: border-box;
-  width: calc((100%/4) - 12px);
+  width: calc((100%/4) - 8px);
   min-height: 320px;
   background-repeat: no-repeat;
   background-position: center center;
@@ -408,8 +408,8 @@ a {
   margin-bottom: 16px;
   margin-left: 20px;
   margin-right: 20px;
-  padding-bottom: 36px;
-  padding-top: 39px;
+  padding-bottom: 27px;
+  padding-top: 27px;
   padding-right: 13px;
   padding-left: 33px;
 }
@@ -505,8 +505,12 @@ a {
   box-sizing: border-box;
   display: flex;
   flex-wrap: nowrap;
-  margin-bottom: 63px;
+  margin-bottom: 61px;
   align-items: flex-start;
+}
+
+.article-last {
+  margin-bottom: 57px;
 }
 
 .article-img-link {
@@ -621,7 +625,7 @@ a {
 }
 
 .sidebar-post:nth-child(n+2) {
-  margin-top: 17px;
+  margin-top: 20px;
 }
 
 .sidebar-post-link {
@@ -894,9 +898,10 @@ a {
   position: relative;
   z-index: -1;
   min-height: 206px;
-  max-width: 300px;
+  width: 300px;
+  max-height: 200px;
   background-position: center;
-  object-fit: cover;
+  background-size: cover;
 }
 
 .product-description {
@@ -1142,6 +1147,10 @@ a {
       min-width: 641px;
       flex-wrap: wrap;
   }
+  .trends-post {
+      width: calc((100% - 3px)/2);
+      min-height: 246px;
+  }
 
   .article-wrap {
       padding-bottom: 26px;
@@ -1295,20 +1304,6 @@ a {
       width: calc((100%/4) - 6px);
   }
   } */
-
-@media screen and (min-width: 641px) and (max-width: 1199px) and (orientation: landscape) {
-    .trends-post {
-      width: calc((100%/4) - 6px);      
-      min-height: 246px;
-  }
-}
-
-@media screen and (min-width: 641px) and (max-width: 1199px) and (orientation: portrait) {
-  .trends-post {
-      width: calc((100%/2) - 6px);      
-      min-height: 246px;
-  }
-}
 
 /***mobile***/
 
@@ -1594,21 +1589,17 @@ a {
       min-width: 360px;
       padding-left: 15px;
       padding-right: 15px;
+
   }
 
   .footer-copyright {
       margin-top: 46px;
   }
+
+  /* @media(orientation: landscape){
+    .trends-post {
+      width: calc((100%/2) - 6px);
+  }
+  } */
+
 }  
-
-@media screen and (max-width: 640px) and (orientation: landscape){
-  .trends-post {
-    width: calc((100%/2) - 6px);      
-    min-height: 246px;
-  }
-
-  .trends {
-    width: 100%;
-    flex-wrap: wrap;
-  }
-}
